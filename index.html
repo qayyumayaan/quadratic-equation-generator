@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equation Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Quadratic Equation Generator</h1>
+    <form id="generatorForm">
+        <label>Choose the type of solutions:</label>
+        <select id="solutionType">
+            <option value="integerOrIrrational">Integer or Irrational Solutions</option>
+            <option value="integer">Integer Solutions</option>
+            <option value="irrational">Irrational Solutions</option>
+            <option value="imaginary">Imaginary Solutions</option>
+        </select>
+        <button type="submit">Generate Equation</button>
+        <button type="button" id="showSolution" style="display: none">Show Solution</button>
+    </form>
+    <div id="equationDisplay"></div>
+    <div id="solutionDisplay" style="display: none;"></div>
+    <div id="vertexDisplay" style="display: none;"></div>
+</body>
+
+</html>
